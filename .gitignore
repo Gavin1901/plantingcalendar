@@ -51,3 +51,7 @@ test-photo.jpg
 out/
 node_modules/
 tsconfig.tsbuildinfo
+
+*.bak
+*.bak_*
+*.tsbuildinfo
