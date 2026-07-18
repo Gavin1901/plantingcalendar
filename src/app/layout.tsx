@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     default: "2026 Vegetable Planting Calendar by USDA Zone | PlantingCalendar",
   },
   description:
-    "Free 2026 vegetable planting calendar by USDA zone. Get frost dates, seed starting, transplant, and harvest windows for 20+ crops.",
+    "Free vegetable planting calendar by USDA hardiness zone — exact frost dates, seed-starting, transplant & harvest windows for 20+ crops. Printable, no sign-up.",
   keywords: [
     "planting calendar 2026",
     "when to plant tomatoes",
