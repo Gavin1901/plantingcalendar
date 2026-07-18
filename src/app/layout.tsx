@@ -20,10 +20,10 @@ export const metadata: Metadata = {
   ...(GSC_TOKEN ? { verification: { google: GSC_TOKEN } } : {}),
   title: {
     template: "%s | 2026 Planting Guide",
-    default: "2026 Vegetable Planting Calendar by USDA Zone | PlantingCalendar",
+    default: "Planting Calendar by ZIP & USDA Zone 2026 | Frost Dates",
   },
   description:
-    "Free vegetable planting calendar by USDA hardiness zone — exact frost dates, seed-starting, transplant & harvest windows for 20+ crops. Printable, no sign-up.",
+    "Find your 2026 planting calendar by USDA zone with last frost dates, first frost dates, seed-starting, transplant and harvest windows for 20+ vegetables. Free, printable, no sign-up.",
   keywords: [
     "planting calendar 2026",
     "when to plant tomatoes",
@@ -34,9 +34,9 @@ export const metadata: Metadata = {
     "garden calendar",
   ],
   openGraph: {
-    title: "2026 Vegetable Planting Calendar by USDA Zone",
+    title: "Planting Calendar by ZIP & USDA Zone 2026",
     description:
-      "Free vegetable planting calendar by USDA zone. 2026 frost dates, sow/transplant/harvest windows for 20 vegetables — no sign-up.",
+      "Find last frost dates, first frost dates and vegetable planting windows by USDA zone. Free 2026 garden planner for tomatoes, carrots, lettuce, garlic and more.",
     url: "https://plantingcalendar.net",
     siteName: "PlantingCalendar",
     images: [{ url: "/og.png", width: 1200, height: 630 }],
