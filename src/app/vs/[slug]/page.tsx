@@ -14,7 +14,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return {
     title: comp.title,
     description: comp.description,
-    alternates: { canonical: `https://__DOMAIN__/vs/${comp.slug}/` },
+    alternates: { canonical: `https://plantingcalendar.net/vs/${comp.slug}/` },
   };
 }
 
@@ -36,9 +36,9 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://__DOMAIN__/" },
-      { "@type": "ListItem", position: 2, name: "Compare", item: "https://__DOMAIN__/vs/" },
-      { "@type": "ListItem", position: 3, name: comp.title, item: `https://__DOMAIN__/vs/${comp.slug}/` },
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://plantingcalendar.net/" },
+      { "@type": "ListItem", position: 2, name: "Compare", item: "https://plantingcalendar.net/vs/" },
+      { "@type": "ListItem", position: 3, name: comp.title, item: `https://plantingcalendar.net/vs/${comp.slug}/` },
     ],
   };
 
