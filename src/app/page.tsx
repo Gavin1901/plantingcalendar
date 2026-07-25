@@ -103,6 +103,14 @@ export default function Home() {
           </p>
         </section>
 
+        <section className="mt-12 rounded-2xl border border-stone-200 bg-white p-6">
+          <h2 className="text-xl font-bold text-stone-900">More gardening resources</h2>
+          <div className="mt-3 flex flex-wrap gap-3 text-sm">
+            <Link className="text-emerald-700 underline" href="/blog/composting-101">Composting 101</Link>
+            <Link className="text-emerald-700 underline" href="/vs">Compare garden planners</Link>
+          </div>
+        </section>
+
         <section className="mt-12">
           <h2 className="text-xl font-bold text-stone-900">Frequently asked questions</h2>
           <div className="mt-4 space-y-4">
