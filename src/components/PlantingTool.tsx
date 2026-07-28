@@ -12,11 +12,14 @@ export default function PlantingTool() {
 
   // 复购钩子：记住用户的区，下次回来直接显示
   useEffect(() => {
-    try {
-      const saved = localStorage.getItem(STORAGE_KEY);
-      if (saved && ZONES.some((z) => z.id === saved)) setZoneId(saved as ZoneId);
-    } catch {}
-    setLoaded(true);
+    const id = window.setTimeout(() => {
+      try {
+        const saved = localStorage.getItem(STORAGE_KEY);
+        if (saved && ZONES.some((z) => z.id === saved)) setZoneId(saved as ZoneId);
+      } catch {}
+      setLoaded(true);
+    }, 0);
+    return () => window.clearTimeout(id);
   }, []);
 
   useEffect(() => {
