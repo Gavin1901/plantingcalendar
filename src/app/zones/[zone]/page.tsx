@@ -14,7 +14,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { zone: zoneId } = await params;
   const zone = zoneById(zoneId);
   if (!zone) return {};
-  const title = `Zone ${zone.id} Planting Calendar — What to Plant & When (2026 Guide)`;
+  const title = zone.id === "8a"
+    ? "Last Frost Date Zone 8a & 2026 Planting Calendar"
+    : `Zone ${zone.id} Planting Calendar ? What to Plant & When (2026 Guide)`;
   return {
     title,
     description: `Full vegetable planting calendar for USDA zone ${zone.id}. Last frost ${zone.lastFrost}, first frost ${zone.firstFrost}. Sow, transplant and harvest dates for 20 vegetables.`,
